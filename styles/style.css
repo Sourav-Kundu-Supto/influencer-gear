@@ -1,0 +1,323 @@
+/* Poppins Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Common CSS Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 50px 0px;
+  width: 90%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #e02c6d;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #e02c6d;
+  margin: 30px 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  border: 2px solid #e02c6d;
+  color: #e02c6d;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* Common CSS End */
+
+/* Header Style */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px 0px;
+}
+
+.main-header .nav-logo a {
+  color: #000;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.main-header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-header nav ul a {
+  display: block;
+  padding-left: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: normal;
+}
+
+/* Hero section style */
+
+.hero-section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+.hero-details h1 {
+  font-size: 55px;
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/circle-design.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.2);
+}
+
+/* Our Partners Styles */
+.our-partners {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 20px;
+}
+
+/* Collection Style */
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.collection {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-size: 14px;
+}
+.collection img {
+  width: 100%;
+}
+
+.collection h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.collection h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.collection p i {
+  color: orange;
+}
+.collection p span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+.collection h4 {
+  font-weight: 700;
+}
+.view-all-collection {
+  display: flex;
+  justify-content: flex-end;
+}
+.view-all-collection .btn {
+  color: #e02c6d;
+  background: none;
+  border: none;
+}
+
+/* Step Styles */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.step {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step h2,
+.step i {
+  font-size: 50px;
+}
+
+.step i {
+  background-color: #e02c6d;
+  padding: 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+.step p {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Footer Style */
+
+footer {
+  background-color: #0a0826;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  font-family: "Manrope", sans-serif;
+}
+footer h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer a {
+  display: inline-block;
+  color: #fff;
+  background: #151338;
+  margin: 2px;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+/* Responsive CSS */
+
+/* Only for mobile */
+@media only screen and (max-width: 600px) {
+  header .main-header {
+    display: none;
+  }
+  /* hero section */
+
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-image img {
+    width: 300px;
+  }
+  .hero-details h1 {
+    font-size: 24px;
+  }
+
+  /* partners section */
+
+  .our-partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+  }
+  .our-partners img:last-child {
+    grid-column: span 2;
+  }
+
+  /* Collections and step */
+
+  .collections,
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Only for tablet css */
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Header Hide */
+  header .main-header {
+    display: none;
+  }
+  /* hero section  */
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* partners section */
+  }
+  .our-partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+  }
+  .our-partners img:last-child {
+    grid-column: span 3;
+  }
+
+  /* Collections and step */
+
+  .collections,
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .collection h2 {
+    font-size: 22px;
+  }
+
+  .step h2 {
+    font-size: 28px;
+  }
+}
